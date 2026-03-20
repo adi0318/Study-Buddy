@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyMate+ — Queries</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="queries">
+  <header class="site-header">
+    <h1>Study Buddy💬</h1>
+    <nav class="top-nav">
+      <a href="index1.html">Profiles</a>
+      <a href="queries.html" class="active">Queries</a>
+      <a href="find-buddy.html">Find Buddy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Ask a Query</h2>
+      <form id="query-form">
+        <div class="grid-2">
+          <div>
+            <label>Your Name</label>
+            <input id="q-name" type="text" placeholder="Use your profile name if added"/>
+          </div>
+          <div>
+            <label>Your Year</label>
+            <select id="q-year">
+              <option value="">-- Select --</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label>Category</label>
+            <select id="q-category">
+              <option value="">-- Select --</option>
+              <option>DSA</option>
+              <option>Placement</option>
+              <option>Internships</option>
+              <option>Projects</option>
+              <option>Web Dev</option>
+              <option>ML/AI</option>
+              <option>DBMS</option>
+              <option>College Clubs</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label>Title</label>
+          <input id="q-title" type="text" placeholder="e.g., Best roadmap for DSA in 2 months?"/>
+        </div>
+        <div>
+          <label>Description</label>
+          <textarea id="q-body" rows="3" placeholder="Add relevant details..."></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary">Post Query</button>
+          <button type="button" id="clear-query-form" class="btn-ghost">Clear</button>
+        </div>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Browse Queries</h2>
+      <div class="filters grid-3">
+        <div>
+          <label>Category</label>
+          <select id="filter-q-category">
+            <option value="">All</option>
+            <option>DSA</option>
+            <option>Placement</option>
+            <option>Internships</option>
+            <option>Projects</option>
+            <option>Web Dev</option>
+            <option>ML/AI</option>
+            <option>DBMS</option>
+            <option>College Clubs</option>
+          </select>
+      <div id="queries-list" class="list-stack"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made for IPSA Students
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

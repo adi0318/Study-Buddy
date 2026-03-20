@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyMate+ — Profiles</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="profiles">
+  <header class="site-header">
+    <h1>Study Buddy📚</h1>
+    <nav class="top-nav">
+      <a href="index.html" class="active">Profiles</a>
+      <a href="queries.html">Queries</a>
+      <a href="find-buddy.html">Find Buddy</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h2>Create Profile </h2>
+       <form id="profile-form">
+        <div class="grid-2">
+          <div>
+            <label>Name</label>
+            <input id="p-name" type="text" placeholder="e.g., Sanny Dancer"/>
+          </div>
+          <div>
+            <label>Email (optional)</label>
+            <input id="p-email" type="email" placeholder="name@college.edu"/>
+          </div>
+          <div>
+            <label>Year of Study</label>
+            <select id="p-year">
+              <option value="">-- Select --</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <label>Subjects</label>
+          <div class="chips">
+          <label><input type="checkbox" name="subject" value="NN"> Neural Networks</label>
+          <label><input type="checkbox" name="subject" value="DSA"> DSA</label>
+            <label><input type="checkbox" name ="subject" value="ISM"> OOPS</label>
+            <label><input type="checkbox" name = "subject" value="DBMS"> DBMS</label>
+            <label><input type="checkbox" name = "subject" value="FML"> Operating System</label>
+            <label><input type="checkbox" name = "subject" value="ES"> Computer Network</label>
+            <label><input type="checkbox" name = "subject" value="DSA"> DSA</label>
+            <label><input type="checkbox" name = "subject" value="WEB"> ADA</label>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <label>Interests</label>
+          <div class="chips">
+            <label><input type="checkbox" value="DSA"> DSA</label>
+            <label><input type="checkbox" value="Placement"> Placement</label>
+            <label><input type="checkbox" value="Internships"> Internships</label>
+            <label><input type="checkbox" value="Projects"> Projects</label>
+            <label><input type="checkbox" value="Hackathons"> Hackathons</label>
+            <label><input type="checkbox" value="Clubs"> College Clubs</label>
+            <label><input type="checkbox" value="Higher Studies"> Higher Studies</label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary">Save Profile</button>
+          <button type="button" id="clear-form" class="btn-ghost">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    </main>
+  <footer class="site-footer">
+    Made for IPSA Students
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
