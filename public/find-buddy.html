@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyMate — Find Buddy</title>
+  <link rel="stylesheet" href="style.css"/> 
+</head>
+<body data-page="find-buddy">
+  <header class="site-header">
+    <h1>Study Buddy🤝</h1>
+    <nav class="top-nav">
+      <a href="index1.html">Profiles</a>
+      <a href="queries.html">Queries</a>
+      <a href="find-buddy.html" class="active">Find Buddy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Enter Your Study Preferences</h2>
+      
+      <form id="buddy-form">
+        <div class="grid-2">
+          <div>
+            <label>Your Name</label>
+            <input id="b-name" type="text" placeholder="eg. Puneet Superstar" required/>
+          </div>
+        </div>
+        <div class="flex-col">
+          <label>Subjects</label>
+          <div class="chips">
+            <label><input type="checkbox" name="subjects" value="NN"> Neural Networks</label>
+            <label><input type="checkbox" name="subjects" value="OOPS"> OOPS</label>
+            <label><input type="checkbox" name="subjects" value="DBMS"> DBMS</label>
+            <label><input type="checkbox" name="subjects" value="OS"> Operating System</label>
+            <label><input type="checkbox" name="subjects" value="CN"> Computer Network</label>
+            <label><input type="checkbox" name="subjects" value="DSA"> DSA</label>
+            <label><input type="checkbox" name="subjects" value="ADA"> ADA</label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary">Find Matches</button>
+          <button type="button" id="buddy-clear" class="btn-ghost">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="buddies-section">
+      <h2>Matching Buddies</h2>
+      <ul id="matching-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made for IPSA Students
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
